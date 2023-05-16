@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <div class="w-full bg-amber-500 py-1 text-center font-medium sm::text-xs sm:py-1">
+        <div class="w-full bg-amber-400 py-1 text-center font-medium sm::text-xs sm:py-1 text-emerald-800">
             <h6>VENTE FLASH : 60% DE RÉDUCTION SUR LES BATTERIES DE VOITURE | UTILISER LE CODE <b>"BATT60"</b></h6>
         </div>
-        <div class="lg:container md:container sm:container mx-auto">
-            <nav class="">
+        <div class="xl:container lg:container md:container sm:container mx-auto">
+            <nav class="flex-col">
                 <div class="flex w-full py-4">
                     <a href="" class=""><img src="/src/images/logo lowfamily brésil vectorisé (1)-page-001.jpg" class="" alt=""></a>
                     <div class="">
@@ -44,13 +44,30 @@
                         </button>
                     </div>
                 </div>
-                <div>
-                    <div class="menu">
-
-                    </div>
-                    <div class="tel">
-
-                    </div>
+                <div class="flex">
+                    <ul class="hidden md:flex font-bold uppercase justify-between cursor-pointer w-full ">
+                        <li class="px-4 py-4 hover:bg-amber-400 hover:text-emerald-600"><a href="">Accueil</a></li>
+                        <li class="px-4 py-4 hover:bg-amber-400 hover:text-emerald-600"><a href="">Page</a></li>
+                        <li class="px-4 py-4 hover:bg-amber-400 hover:text-emerald-600"><a href="">Pieces de Rechange</a></li>
+                        <li class="px-4 py-4 hover:bg-amber-400 hover:text-emerald-600"><a href="">Freins</a></li>
+                        <li class="px-4 py-4 hover:bg-amber-400 hover:text-emerald-600"><a href="">Batteries pour voitures</a></li>
+                        <li class="px-4 py-4 hover:bg-amber-400 hover:text-emerald-600"><a href="">Outils & Garage</a></li>
+                    </ul>
+                        <button class="block md:hidden focus:outline-none px-2 group">
+                            <div class="w-5 h-1 bg-emerald-600 mb-1"></div>
+                            <div class="w-5 h-1 bg-emerald-600 mb-1"></div>
+                            <div class="w-5 h-1 bg-emerald-600"></div>
+                            <div class="absolute top-0 right-full h-screen w-8/12 bg-white opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-100">
+                                <ul class="fle flex-col items-center w-full font-bold uppercase cursor-pointer">
+                                    <li class="w-full py-4 px-6 hover:bg-amber-400 hover:text-emerald-600">Accueil</li>
+                                    <li class="w-full py-4 px-6 hover:bg-amber-400 hover:text-emerald-600">Page</li>
+                                    <li class="w-full py-4 px-6 hover:bg-amber-400 hover:text-emerald-600">Pieces de Rechange</li>
+                                    <li class="w-full py-4 px-6 hover:bg-amber-400 hover:text-emerald-600">Freins</li>
+                                    <li class="w-full py-4 px-6 hover:bg-amber-400 hover:text-emerald-600">Batteries pour voitures</li>
+                                    <li class="w-full py-4 px-6 hover:bg-amber-400 hover:text-emerald-600">Outils & Garage</li>
+                                </ul>
+                            </div>
+                        </button>
                 </div>
             </nav>
         </div>

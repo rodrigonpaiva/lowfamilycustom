@@ -10,5 +10,12 @@ module.exports = {
     },
     extend: {},
   },
+  variantes:{
+    extends:{
+      display: ['group-focus'],
+      opacity: ['group-focus'],
+      inset: ['group-focus']
+    }
+  },
   plugins: [],
 }
