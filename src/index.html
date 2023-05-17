@@ -19,7 +19,7 @@
                     <div class="flex sm:w-full md:w-2/3 justify-center items-center">
                         <form class="flex sm:w-full mx-5" role="search">
                             <input class="rounded-full border-2 shadow-xl py-3 px-2 text-gray-600 text-sm sm:text-center md:text-end bg-gray-100 tracking-wider w-full justify-center items-center hover:border-emerald-600 hover:shadow-sm focus:outline-none focus:shadow-xl" type="search" placeholder="Recherche de Produits" aria-label="Search">
-                                <span class="flex bg-amber-400 border-2 border-amber-400 rounded-full shadow-xl justify-center items-center px-4 ml-2 cursor-pointer hover:bg-amber-500 hover:text-emerald-600 hover:border-2 hover:border-emerald-600">
+                                <span class="flex bg-amber-400 border-2 border-amber-400 rounded-full shadow-xl justify-center items-center px-4 ml-2 cursor-pointer text-white transition duration-300 focus-visible:outline-none whitespace-nowrap hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>
@@ -28,16 +28,16 @@
 
                     </div>
                     <div class="flex justify-center sm:pt-4 md:pt-0 items-center gap-4">
-                        <button class="text-amber-400 hover:text-amber-600">
+                        <button class="text-amber-400 transition duration-300 hover:text-emerald-800">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
                                 <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
                             </svg>
                         </button>
-                        <button  class="text-amber-400 hover:text-amber-600">
+                        <button  class="text-amber-400 transition duration-300 hover:text-emerald-800">
                             <div class="relative ">
                                 <div class="t-0 absolute left-3">
-                                    <p class="flex h-2 w-2 items-center justify-center rounded-full bg-emerald-700 p-3 text-xs text-amber-400">3</p>
+                                    <p class="flex h-2 w-2 items-center justify-center rounded-full bg-emerald-600 p-3 text-xs text-amber-400">3</p>
                                 </div>
                             <div class="pt-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -45,10 +45,10 @@
                                 </svg>
                             </div>
                         </button>
-                        <button  class="text-amber-400 hover:text-amber-600">
+                        <button  class="text-amber-400 transition duration-300 hover:text-emerald-800">
                             <div class="relative ">
                                 <div class="t-0 absolute left-3">
-                                    <p class="flex h-2 w-2 items-center justify-center rounded-full bg-emerald-700 p-3 text-xs text-amber-400">3</p>
+                                    <p class="flex h-2 w-2 items-center justify-center rounded-full bg-emerald-600 p-3 text-xs text-amber-400">3</p>
                                 </div>
                                 <div class="pt-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
@@ -87,13 +87,26 @@
             </nav>
         </div>
     </header>
-    <main class="my-4">
-        <section class="flex-col text-center bg-car-slide-show bg-center bg-no-repeat bg-cover w-screen py-28 text-white ">
-            <h4 class="font-bold text-3xl">Grande Soldes</h4>
-            <h3 class="font-extrabold text-5xl my-4 ">Les Soldes De 40 % Sont De Retour</h3>
-            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a dui ut arcu egestas lobortis.<br/> 
-            Nullam molestie, lectus quis consequat congue, justo ex ullamcorper tellus, ac feugiat tortor purus ullamcorper dui.</p>
-        </section>
+    <main class="my-4 ">
+        <div class="flex py-16">
+            <div class="flex-col px-20 bg-blob bg-no-repeat bg-fixed bg-left basis-1/3">
+                <h4 class="font-bold text-3xl">Grande Soldes</h4>
+                <h3 class="font-extrabold text-5xl my-4 ">Les 
+                    <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-amber-400 relative inline-block">
+                        <span class="relative text-emerald-600">Soldes</span>
+                </span> De 40 % Sont De Retour</h3>
+                <p class="text-sm mt-3 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a dui ut arcu egestas lobortis.<br/> 
+                Nullam molestie, lectus quis consequat congue, justo ex ullamcorper tellus, ac feugiat tortor purus ullamcorper dui.</p>
+                <button class="border-2 border-amber-400 items-center justify-center h-12 px-6 text-sm font-medium tracking-wide text-white bg-amber-400 rounded-full transition duration-300 focus-visible:outline-none whitespace-nowrap hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                    <span>Large button</span>
+                </button>
+            </div>
+            <div class="basis-2/3 mr-16 bg-car-slide bg-no-repeat bg-contain bg-right">
+                
+            </div>
+
+        </div>
+
     </main>
     <footer>
 

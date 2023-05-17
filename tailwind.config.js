@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -10,7 +12,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'car-slide-show': "url('/src/images/car-slideshow.png')",
+        'car-slide': "url('/src/images/gtr-nissan.png')",
+        'blob': "url('/src/images/blob.svg')"
       }
     },
   },
@@ -21,5 +24,22 @@ module.exports = {
       inset: ['group-focus']
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addComponents }) {
+      addComponents({
+        '.btn-yellow': {
+          padding: '.5rem 1rem',
+          borderRadius: '.25rem',
+          fontWeight: '600',
+        },
+        '.btn-green': {
+          backgroundColor: '#3490dc',
+          color: '#fff',
+          '&:hover': {
+            backgroundColor: '#2779bd'
+          },
+        }
+      })
+    })
+  ],
 }
