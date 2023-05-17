@@ -8,7 +8,11 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'car-slide-show': "url('/src/images/car-slideshow.png')",
+      }
+    },
   },
   variantes:{
     extends:{
