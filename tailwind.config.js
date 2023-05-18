@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'car-slide': "url('/src/images/gtr-nissan.png')",
+        'car-slide': "url('/src/images/car-slideshow.png')",
         'blob': "url('/src/images/blob.svg')"
       }
     },
