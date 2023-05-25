@@ -1,7 +1,7 @@
 /*
-  Template Name: Partsix - Auto Parts & Car Accessories Shop HTML Template
-  Author Name: Hook theme
-  Author URL: https://themeforest.net/user/hooktheme
+  Template Name: Low Family Custom - Shop
+  Author Name: Rodrigo Paiva
+  Author URL: https://rodrigopaiva.fr
   Version: 1.0.0
 
 

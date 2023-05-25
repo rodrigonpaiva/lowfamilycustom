@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-  Template Name: Grocee - Organic Food HTML Template
-  Author Name: Hook theme
-  Author URL: https://themeforest.net/user/hooktheme
+  Template Name: Low Family Custom - Shop
+  Author Name: Rodrigo Paiva
+  Author URL: https://rodrigopaiva.fr
   Version: 1.0.0
 
   ----------------------------
@@ -51,7 +51,7 @@
 */
 :root {
   --primary-color: #212121;
-  --secondary-color: #ED1D24;
+  --secondary-color: #FFB91F;
   --foreground-color: #121416;
   --foreground-sub-color: #898686;
   --body-text-color: #000000;
@@ -1805,12 +1805,12 @@ body.overlay__active::before,
   display: block;
 }
 .main__logo--img {
-  max-width: 145px;
+  max-width: 100px;
   display: block;
 }
 @media only screen and (min-width: 480px) {
   .main__logo--img {
-    max-width: 160px;
+    max-width: 120px;
   }
 }
 @media only screen and (min-width: 768px) {
