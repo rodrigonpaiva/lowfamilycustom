@@ -15,3 +15,13 @@
     wp_enqueue_style('low_family_style', get_stylesheet_uri(), array(), filemtime(get_template_directory().'/style.css'), 'all');
  }
  add_action('wp_enqueue_scripts', 'low_family_scripts');
+
+
+ function low_family_config(){
+   register_nav_menus(
+      array(
+         'low_family_main_menu' => 'main_menu'
+      )
+   );
+ }
+ add_action('after_setup_theme', 'low_family_config', 0);
